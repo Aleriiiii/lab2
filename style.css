@@ -126,14 +126,14 @@ body {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
     .container {
         width: 95%; /* ширина контейнера трохи менше екрану */
     }
 
     .grid {
-        grid-template-columns: 1fr; /* тільки одна колонка */
-        gap: 15px; /* відстань між карточками */
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
 
     .portfolio h2 {
