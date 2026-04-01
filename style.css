@@ -36,18 +36,19 @@ body {
     gap: 25px;
 }
 
+/* Card */
 .card {
     background: #111;
     border-radius: 10px;
     overflow: hidden;
     text-align: left;
     transition: 0.3s;
-    /* додаємо тінь */
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
 }
 
 .card img {
@@ -109,4 +110,51 @@ body {
 
 .more-btn:hover {
     background: #6d28d9;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 95%; /* контейнер трохи відступає від країв екрана */
+    }
+
+    .grid {
+        grid-template-columns: 1fr; /* тільки одна колонка */
+        gap: 15px; /* відстань між карточками */
+    }
+
+    .portfolio h2 {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
+    .card-content h3 {
+        font-size: 16px;
+    }
+
+    .card-content p {
+        font-size: 13px;
+    }
+
+    .more-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
 }
