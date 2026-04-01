@@ -1,3 +1,4 @@
+/* Загальні стилі */
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +24,7 @@ body {
 }
 
 .subtitle {
-    color: #777;
+    color: #666; /* трохи сіріше */
     margin: 15px auto 40px;
     max-width: 600px;
     line-height: 1.5;
@@ -43,12 +44,11 @@ body {
     overflow: hidden;
     text-align: left;
     transition: 0.3s;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3); /* тінь */
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
 }
 
 .card img {
@@ -112,28 +112,16 @@ body {
     background: #6d28d9;
 }
 
-/* Media Queries for Responsiveness */
-@media screen and (max-width: 1024px) {
+/* Адаптивність для телефонів і планшетів */
+@media screen and (max-width: 768px) {
     .container {
-        width: 90%;
+        width: 95%;
+        margin: 0 auto;
     }
-}
 
-@media screen and (max-width: 900px) {
     .grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr; /* одна колонка */
         gap: 20px;
-    }
-}
-
-@media screen and (max-width: 720px) {
-    .container {
-        width: 95%; /* ширина контейнера трохи менше екрану */
-    }
-
-    .grid {
-        grid-template-columns: 1fr;
-        gap: 15px;
     }
 
     .portfolio h2 {
@@ -154,7 +142,8 @@ body {
     }
 
     .more-btn {
-        padding: 10px 20px;
+        width: 100%;
+        padding: 12px 0;
         font-size: 14px;
     }
 }
