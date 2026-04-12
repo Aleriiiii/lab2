@@ -278,6 +278,10 @@ body.menu-open {
     overflow: hidden;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 html {
-    overflow-y: scroll; /* завжди резервує місце під скрол */
+    scrollbar-gutter: stable;
 }
