@@ -51,4 +51,12 @@ document.addEventListener("DOMContentLoaded", function () {
             closeMenu();
         }
     });
+
+    window.addEventListener("resize", () => {
+    if (window.innerWidth > 768) {
+        menu.classList.remove("active");
+        burger.classList.remove("active");
+        document.body.classList.remove("menu-open");
+    }
+});
 });

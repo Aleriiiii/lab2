@@ -82,7 +82,7 @@ body {
     position: fixed;
     right: 20px;
     top: 15px;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -276,4 +276,8 @@ body {
 
 body.menu-open {
     overflow: hidden;
+}
+
+html {
+    overflow-y: scroll; /* завжди резервує місце під скрол */
 }
